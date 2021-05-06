@@ -43,8 +43,9 @@ function setup() {
 
 	groundObject=new ground(width/2,600,width,20);
   //create launcherObject here
-var launcherObject
-var launchForce =100;
+
+ 
+launcherObject=new Launcher(stoneObj.body,{x:235,y:420});
 
 	Engine.run(engine);
 }
@@ -74,7 +75,7 @@ function draw() {
   groundObject.display();
 
  // create a launcher object
-    launcherObject=new Launcher(stoneObj.body,{x:235,y:420});
+    
 
   // display launcher object here
  launcherObject.display();
